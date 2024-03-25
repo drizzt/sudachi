@@ -358,7 +358,7 @@ void MicroProfileInitUI()
     if(!bInitialized)
     {
         bInitialized = true;
-        memset(&g_MicroProfileUI, 0, sizeof(g_MicroProfileUI));
+        memset((void *)&g_MicroProfileUI, 0, sizeof(g_MicroProfileUI));
         UI.nActiveMenu = UINT32_MAX;
         UI.fDetailedOffsetTarget = UI.fDetailedOffset = 0.f;
         UI.fDetailedRangeTarget = UI.fDetailedRange = 50.f;
